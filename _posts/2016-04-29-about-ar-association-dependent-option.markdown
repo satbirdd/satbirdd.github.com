@@ -8,15 +8,14 @@ categories: Rails ActiveRecord Association
 在Rails中使用ActiveRecord，当我们建立关系的时候，不论是has_many，has_one还是belongs_to的关系，Rails都提供了一个dependent的option。那么这个option在各个关系中都有什么作用，以及在不同关系中的行为有哪些不同呢？下面以user及order这两个关联模型来探索一下。
 假设user与order的关系如下：
 {% highlight ruby %}
-  # user.rb
   class User < ActiveRecord::Base
     has_many :orders
   end
-  # shop.rb
+
   class Shop < ActiveRecord::Base
     has_many :orders
   end
-  # order.rb
+  
   class Order < ActivRecord::Base
     belongs_to :user
     belongs_to :shop
