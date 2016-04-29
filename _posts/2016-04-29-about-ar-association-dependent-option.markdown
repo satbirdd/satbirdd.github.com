@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "关于Rails ActiveRecord关系建立的dependent选项"
+title:  关于Rails ActiveRecord模型关联的dependent选项
 date:   2014-04-29 22:30:25
 categories: Rails ActiveRecord Association
 ---
@@ -12,12 +12,10 @@ categories: Rails ActiveRecord Association
   class User < ActiveRecord::Base
     has_many :orders
   end
-
   # shop.rb
   class Shop < ActiveRecord::Base
     has_many :orders
   end
-
   # order.rb
   class Order < ActivRecord::Base
     belongs_to :user
