@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  关于Rails ActiveRecord模型关联的dependent选项
-date:   2014-04-29 22:30:25
+date:   2016-04-29 22:30:25
 categories: Rails ActiveRecord Association
 ---
 
