@@ -5,8 +5,7 @@ date:   2014-04-29 22:30:25
 categories: Rails ActiveRecord Association
 ---
 
-在Rails中使用ActiveRecord，当我们建立模型关联的时候，不论是has_many，has_one还是belongs_to，dependent option的取值都包含destroy和delete/delete_all这两个值，这两个值得含义很直白，就是在删除（destroy）模型的时候，对关联的模型调用对应的方法: destroy, delete（如果关联的是集合的话则是delete_all）。
-现在让我们考虑这种情况：
+让我们考虑这种情况：
 {% highlight ruby %}
   class User < ActiveRecord::Base
     has_one :user_infor
