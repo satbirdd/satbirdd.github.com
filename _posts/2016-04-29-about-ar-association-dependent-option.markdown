@@ -101,4 +101,4 @@ SQL输出：
 {% endhighlight %}
 同样达到目的。
 对于has_many的关系，经过不严格的测试，在调用associations= 及 association_ids= 这两个方法的时候，option这个选项的值，也会产生上述一样的行为。
-这说明，建立模型关联的时的dependent选项，不仅仅是在删除模型自身时，影响关联模型，也会对关联模型替换产生影响。而且根据上面的测试可以初步推测，has_one和has_many的dependent选项，如果不设置，默认值为nullify。
+这说明，建立模型关联的时的dependent选项，不仅仅是在删除模型自身时，影响关联模型，也会对关联模型替换产生影响。~~而且根据上面的测试可以初步推测，has_one和has_many的dependent选项，如果不设置，默认值为nullify。~~
