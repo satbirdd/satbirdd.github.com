@@ -7,10 +7,12 @@ categories: Rails ActiveRecord attribute
 设想你需要重写一个ActiveRecord模型的属性的getter方法，比方说name这个方法，这时候很多人都会想到使用read_attribute和[]这两个方法，代码如下：
 {% highlight ruby %}
   # overwrite a attribute getter, which's column name is "name"
+  # 方法一
   def name
     trans_name || read_attribute(:name)
   end
 
+  # 方法二
   def name
     trans_name || self[:name]
   end
@@ -18,6 +20,7 @@ categories: Rails ActiveRecord attribute
 但是其实有一种更加直白的方法，在ruby中说到重写（overwriting），怎么能够忘记super？
 {% highlight ruby %}
   # overwrite a attribute getter, which's column name is "name"
+  # 方法三
   def name
     trans_name || super
   end
