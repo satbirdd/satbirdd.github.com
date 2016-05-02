@@ -4,6 +4,7 @@ title:  重写ActiveRecord模型getter的几种方法
 date:   2016-05-02 00:02:25
 categories: Rails ActiveRecord attribute
 ---
+
 设想你需要重写一个ActiveRecord模型的属性的getter方法，比方说name这个方法，这时候很多人都会想到使用read_attribute和[]这两个方法，代码如下：
 {% highlight ruby %}
   # overwrite a attribute getter, which's column name is "name"

@@ -7,23 +7,3 @@ paginate: 10
 highlighter: pygments
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
-
-gems: [jekyll-timeago]
-
-jekyll_timeago:
-  today: '今天'
-  yesterday: '昨天'
-  tomorrow: '明天'
-  and: '和'
-  suffix: '之前'
-  prefix: ''
-  suffix_future: '在'
-  prefix_future: ''
-  years: '年'
-  year: '年'
-  months: '月'
-  month: '月'
-  weeks: '周'
-  week: '周'
-  days: '天'
-  day: '天'
