@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  前端模板 VS SJR（Server-generated JavaScript Responses）
-date:   2016-05-07 15:12:00
+date:   2016-05-07 07:12:00
 categories: Rails SJR frontend
 ---
 在使用AJAX跟新数据的时候，经常遇到这种情况：首次渲染模型的模板是Rails模板，而后，将通过AJAX更新或者添加新数据返回的JSON数据使用前端模板（underscore的template）来渲染到DOM中，这样就会需要分别写后端和前端两套模板。这两套模板基本相同，但是一个是Rails模板，一个是js模板，这样产生了重复代码，也加大了工作量和维护难度。
